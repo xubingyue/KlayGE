@@ -43,6 +43,7 @@
 #endif
 #endif
 #include <vector>
+#include <cstring>
 #include <boost/assert.hpp>
 
 #include <KFL/CpuInfo.hpp>
