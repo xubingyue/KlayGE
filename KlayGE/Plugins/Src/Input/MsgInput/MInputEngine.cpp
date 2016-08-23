@@ -255,6 +255,9 @@ namespace KlayGE
 			std::placeholders::_2));
 		devices_.push_back(MakeSharedPtr<MsgInputKeyboard>());
 #endif
+#elif defined KLAYGE_PLATFORM_LINUX
+		// TODO
+		KFL_UNUSED(main_wnd);
 #endif
 
 #if (defined KLAYGE_PLATFORM_WINDOWS_DESKTOP) && (defined KLAYGE_HAVE_LIBOVR)
