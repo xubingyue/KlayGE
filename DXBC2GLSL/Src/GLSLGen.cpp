@@ -7831,6 +7831,7 @@ void GLSLGen::ToCopyToInterShaderPatchConstantRecords(std::ostream& out)const
 				{
 					out << "gl_TessLevelOuter[" << sig_desc.semantic_index << ']';
 				}
+				need_comps = false;
 				break;
 
 			case SN_UNDEFINED:
