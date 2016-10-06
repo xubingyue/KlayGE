@@ -157,4 +157,34 @@ namespace KlayGE
 		KFL_UNUSED(src_height);
 		KFL_UNUSED(linear);
 	}
+
+	void Blitter::Blit(GraphicsBufferPtr const & dst,
+		TexturePtr const & src, uint32_t src_array_index, uint32_t src_level,
+		uint32_t src_x_offset, uint32_t src_y_offset, uint32_t src_width, uint32_t src_height)
+	{
+		KFL_UNUSED(dst);
+		KFL_UNUSED(src);
+		KFL_UNUSED(src_array_index);
+		KFL_UNUSED(src_level);
+		KFL_UNUSED(src_x_offset);
+		KFL_UNUSED(src_y_offset);
+		KFL_UNUSED(src_width);
+		KFL_UNUSED(src_height);
+	}
+
+	void Blitter::Blit(TexturePtr const & dst, uint32_t dst_array_index, uint32_t dst_level,
+		uint32_t dst_x_offset, uint32_t dst_y_offset, uint32_t dst_width, uint32_t dst_height,
+		GraphicsBufferPtr const & src, uint32_t src_x_offset)
+	{
+
+		KFL_UNUSED(dst);
+		KFL_UNUSED(dst_array_index);
+		KFL_UNUSED(dst_level);
+		KFL_UNUSED(dst_x_offset);
+		KFL_UNUSED(dst_y_offset);
+		KFL_UNUSED(dst_width);
+		KFL_UNUSED(dst_height);
+		KFL_UNUSED(src);
+		KFL_UNUSED(src_x_offset);
+	}
 }

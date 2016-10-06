@@ -59,6 +59,13 @@ namespace KlayGE
 			uint32_t src_x_offset, uint32_t src_y_offset, uint32_t src_width, uint32_t src_height,
 			bool linear);
 
+		void Blit(GraphicsBufferPtr const & dst,
+			TexturePtr const & src, uint32_t src_array_index, uint32_t src_level,
+			uint32_t src_x_offset, uint32_t src_y_offset, uint32_t src_width, uint32_t src_height);
+		void Blit(TexturePtr const & dst, uint32_t dst_array_index, uint32_t dst_level,
+			uint32_t dst_x_offset, uint32_t dst_y_offset, uint32_t dst_width, uint32_t dst_height,
+			GraphicsBufferPtr const & src, uint32_t src_x_offset);
+
 	private:
 		RenderLayoutPtr rl_;
 		FrameBufferPtr frame_buffer_;
